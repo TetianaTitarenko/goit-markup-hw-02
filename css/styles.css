@@ -1,11 +1,189 @@
-body {
-     background-color: #FFFFFF;
-     color: #212121;
-}
-
-/* колір основниго тексту -color: #212121*/
-/* колір вторинного тексту - color: #757575; */
+/* колір основниго тексту -color: #757575;*/
+/* колір вторинного тексту - color: #212121;*/
 /* текст hero - color: #FFFFFF; */
-/* маркери - color: #2196F3; */
+/* маркери та кнопка в HERO - color: #2196F3; */
 /* основний колір сторінки -  background: #FFFFFF*/
 /* другий колір сторінки - background: #2F303A;*/
+/* колір кнопок та НашаКоманда #F5F4FA;*/
+
+:root {
+     --primary-text-color: #757575;
+     --title-text-color: #212121;
+     --accent-color: #2196F3;
+     --primary-bg-color: #FFFFFF;
+     --hero-footer-bg-color: #2F303A;
+     --button-ourteam-bg-color: #F5F4FA;
+}
+
+body {
+     background-color: var(--primary-bg-color);
+     color: var(--primary-text-color);
+}
+h2,
+h3 {
+     color: var(--title-text-color);
+}
+/* видалила властивості за замовчуванням */
+ul {
+     list-style: none;
+}
+
+/* Шапка */
+.header {
+}
+.nav {
+}
+.logo {
+     color: var(--accent-color);
+}
+.logo-stud {
+    color: var(--title-text-color); 
+}
+.nav-list {
+}
+.nav-list-item {
+}
+.nav-link {
+     color: var(--title-text-color);
+}
+.nav-link-active {
+     color: var(--accent-color);
+
+}
+.header-lisp {
+     
+}
+.header-list-item {
+}
+.header-link {
+     color: none;
+     color: var(--primary-text-color);
+}
+.header-link:hover,
+.header-link:focus
+{
+     color: var(--accent-color);
+}
+.main {
+}
+/* <!-- Hero section --> */
+.hero {
+     background-color: var(--hero-footer-bg-color);
+}
+.hero-main-title {
+     color: var(--primary-bg-color);
+}
+.hero-btn {
+     color: var(--primary-bg-color);
+     background-color: var(--accent-color);
+}
+/*  <!-- Особливості --> */
+.trait {
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.trait-list {
+}
+.trait-list-item {
+}
+.trait-subtitle {
+}
+.trait-text {
+}
+.trait-lis-item {
+}
+/* <!-- Чим ми займаємося --> */
+.produce {
+}
+.produce-title {
+}
+.produce-list {
+}
+.produce-lis-item {
+}
+.produce-img {
+}
+/* <!-- Наша команда --> */
+.team {
+     background-color: var(--button-ourteam-bg-color);
+}
+.team-title {
+}
+.team-list {
+}
+.team-lis-item {
+}
+.team-img {
+}
+.team-subtitle {
+}
+.team-text {
+}
+
+/* Footer */
+.footer {
+     background-color: var(--hero-footer-bg-color);
+}
+.foolder-logo {
+     color: none;
+     color: #2196F3;
+}
+.foolder-logo-stud {
+    color: var(--primary-bg-color); 
+}
+.address {
+}
+.footer-list {
+}
+.footer-lis-item {
+}
+.footer-address {
+     color: none;
+     color: var(--primary-bg-color);
+}
+.footer-link {
+     color: none;
+     color: var(--primary-text-color);
+}
+
+/* Сторінка портфоліо */
+.portfolio-hide {
+}
+.portfolio {
+}
+.portfolio-title {
+}
+.portfolio-list {
+}
+.portfolio-list-item {
+}
+.portfolio-btn {
+     color: var(--title-text-color);
+     background-color: var(--button-ourteam-bg-color);
+}
+.portfolio-btn:hover,
+.portfolio-btn:focus {
+     color: var(--primary-bg-color);
+     background-color: var(--accent-color);
+}
+.port-list {
+}
+.port-list-item {
+}
+.port-img {
+}
+.port-subtitle {
+}
+.port-text {
+}
