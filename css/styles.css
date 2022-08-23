@@ -18,49 +18,11 @@
      --secondary-font: "Raleway", sans-serif;
 }
 
-body {
+body {  
+     list-style-type: none;   
      font-family: var(--main-font);
-     font-style: normal;
      background-color: var(--primary-bg-color);
      color: var(--primary-text-color);     
-}
-h1 {
-     font-weight: 900;
-     font-size: 44px;
-     line-height: calc(60/44);
-     text-align: center;
-     letter-spacing: 0.06em;
-     text-transform: uppercase;
-}
-h2 {
-     font-weight: 700;
-     font-size: 36px;
-     line-height: calc(42/36);
-     text-align: center;
-     letter-spacing: 0.03em;
-     color: var(--title-text-color);
-}
-h3 {
-     font-weight: 700;
-     font-size: 14px;
-     line-height: calc(16/14);
-     letter-spacing: 0.03em;
-     text-transform: uppercase;
-     color: var(--title-text-color);
-}
-p {
-     font-size: 14px;
-     line-height: calc(24/14);
-     letter-spacing: 0.03em;
-}
-
-/* видалила властивості за замовчуванням */
-ul {
-     list-style: none;
-}
-a {
-     text-decoration: none;
-     cursor: none;
 }
 /* Шапка */
 .header {
@@ -68,27 +30,34 @@ a {
 .nav {
 }
 .logo {
-     color: var(--accent-color);
-     font-family: 'Raleway';
+     color: currentColor;
+     text-decoration: none;
+     font-family: var(--secondary-font);
      font-weight: 700;
      font-size: 26px;
      line-height: calc(31/26);
      letter-spacing: 0.03em;
      cursor: pointer;
 }
+.logo-web {
+     color: var(--accent-color);
+}
 .logo-stud {
     color: var(--title-text-color); 
 }
 .nav-list {
+     list-style-type: none;
      font-weight: 500;
      font-size: 14px;
      line-height: calc(16/14);
      letter-spacing: 0.02em;
+     color: var(--title-text-color);
 }
 .nav-list-item {
 }
 .nav-link {
-     color: var(--title-text-color);
+     color: currentColor;
+     text-decoration: none;
      cursor: pointer;
 }
 .nav-link:hover,
@@ -96,11 +65,12 @@ a {
      color: var(--accent-color);
 }
 .nav-link-active {
+     text-decoration: none;
      color: var(--accent-color);
      cursor: pointer;
-
 }
-.header-lisp {
+.header-list {
+     list-style-type: none;
      font-weight: 500;
      font-size: 14px;
      line-height: calc(16/14);
@@ -109,13 +79,16 @@ a {
 .header-list-item {
 }
 .header-link {
-     color: none;
-     color: var(--primary-text-color);
+     text-decoration: none;
+     font-weight: 500;
+     font-size: 14px;
+     line-height: calc(16/14);
+     letter-spacing: 0.02em;
+     color: currentColor;
      cursor: pointer;
 }
 .header-link:hover,
-.header-link:focus
-{
+.header-link:focus{
      color: var(--accent-color);
 }
 .main {
@@ -125,12 +98,26 @@ a {
      background-color: var(--hero-footer-bg-color);
 }
 .hero-main-title {
+     font-weight: 900;
+     font-size: 44px;
+     line-height: calc(60/44);
+     text-align: center;
+     letter-spacing: 0.06em;
+     text-transform: uppercase;
      color: var(--primary-bg-color);
 }
 .hero-btn {
      color: var(--primary-bg-color);
      background-color: var(--accent-color);
      cursor: pointer;
+     font-weight: 700;
+     font-size: 16px;
+     line-height: calc(30/16);
+     display: flex;
+     align-items: center;
+     text-align: center;
+     letter-spacing: 0.06em;
+     color: #FFFFFF;
 }
 .hero-btn:hover,
 .hero-btn:focus {
@@ -141,25 +128,35 @@ a {
 .trait {
 }
 .visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+     position: absolute;
+     width: 1px;
+     height: 1px;
+     margin: -1px;
+     border: 0;
+     padding: 0;
+     
+     white-space: nowrap;
+     clip-path: inset(100%);
+     clip: rect(0 0 0 0);
+     overflow: hidden;
+   }
 .trait-list {
+     list-style-type: none;
 }
 .trait-list-item {
 }
 .trait-subtitle {
+     font-weight: 700;
+     font-size: 14px;
+     line-height: calc(16/14);
+     letter-spacing: 0.03em;
+     text-transform: uppercase;
+     color: var(--title-text-color);
 }
 .trait-text {
+     font-size: 14px;
+     line-height: calc(24/14);
+     letter-spacing: 0.03em;
 }
 .trait-lis-item {
 }
@@ -167,8 +164,15 @@ a {
 .produce {
 }
 .produce-title {
+     font-weight: 700;
+     font-size: 36px;
+     line-height: calc(42/36);
+     text-align: center;
+     letter-spacing: 0.03em;
+     color: var(--title-text-color);
 }
 .produce-list {
+     list-style-type: none;
 }
 .produce-lis-item {
 }
@@ -179,25 +183,42 @@ a {
      background-color: var(--button-ourteam-bg-color);
 }
 .team-title {
+     font-weight: 700;
+     font-size: 36px;
+     line-height: calc(42/36);
+     text-align: center;
+     letter-spacing: 0.03em;
+     color: var(--title-text-color);
 }
 .team-list {
+     list-style-type: none;
 }
 .team-lis-item {
 }
 .team-img {
 }
 .team-subtitle {
+     font-weight: 500;
+     font-size: 16px;
+     line-height: calc(19/16);
+     text-align: center;
+     letter-spacing: 0.03em;
+     color: var(--title-text-color);
 }
 .team-text {
+     font-size: 16px;
+     line-height: calc(19/16);
+     text-align: center;
+     letter-spacing: 0.03em;
 }
 
 /* Footer */
 .footer {
-     background-color: #212121;
+     background-color: var(--hero-footer-bg-color);
 }
 .footer-logo {
-     color: var(--accent-color);
-     font-family: 'Raleway';
+     color: currentColor;
+     text-decoration: none;
      font-weight: 700;
      font-size: 26px;
      line-height: calc(31/26);
@@ -210,10 +231,12 @@ a {
 .address {
 }
 .footer-list {
+     list-style-type: none;
 }
 .footer-lis-item {
 }
 .footer-address {
+     text-decoration: none;
      color: none;
      color: var(--primary-bg-color);
      font-style: normal;
@@ -223,13 +246,13 @@ a {
      cursor: pointer;
 }
 .footer-link {
-     color: none;
-     color: var(--primary-text-color);
+     text-decoration: none;
      font-style: normal;
+     cursor: pointer;
      font-size: 14px;
      line-height: calc(24/14);
      letter-spacing: 0.03em;
-     cursor: pointer;
+     color: rgba(255, 255, 255, 0.6);
 }
 
 /* Сторінка портфоліо */
@@ -240,13 +263,14 @@ a {
 .portfolio-title {
 }
 .portfolio-list {
+     list-style-type: none;
+}
+.portfolio-list-item {
      font-weight: 500;
      font-size: 16px;
      line-height: calc(26/16);
      text-align: center;
      letter-spacing: 0.03em;
-}
-.portfolio-list-item {
 }
 .portfolio-btn {
      color: var(--title-text-color);
@@ -259,12 +283,21 @@ a {
      background-color: var(--accent-color);
 }
 .port-list {
+     list-style-type: none;
 }
 .port-list-item {
 }
 .port-img {
 }
 .port-subtitle {
+     font-weight: 700;
+     font-size: 18px;
+     line-height: var(36/18);
+     letter-spacing: 0.06em;
+     color: var(--title-text-color);
 }
 .port-text {
+     font-size: 16px;
+     line-height: var(30/16);
+     letter-spacing: 0.03em;
 }
